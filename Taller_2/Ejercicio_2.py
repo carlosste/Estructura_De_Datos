@@ -25,10 +25,11 @@ print(dinamico(5))
 valores = [10, 20, 50, 500, 980, 1500]
 
 print("-----------------------")
-print("Ingeniería de Sistemas")
+print("Ingeniería de Sistemas, Campus Cali UCC")
 print("Carlos Steven Lozano Quintero")
 print("23/02/25")
 print("-----------------------")
+
 print("Tiempos de ejecución")
 
 for n in valores:

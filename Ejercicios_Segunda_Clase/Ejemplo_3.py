@@ -1,14 +1,9 @@
-def busqueda_binaria(lista, objetivo):
-    inicio, fin = 0, len(lista) - 1
-    while inicio <= fin:
-        medio = (inicio + fin) // 2
-        if lista[medio] == objetivo:
-            return medio
-        elif lista[medio] < objetivo:
-            inicio = medio + 1
-        else:
-            fin = medio - 1
-    return -1
+def encontrar_maximo(lista):
+    maximo = lista[0]  # Inicializar con el primer elemento
+    for num in lista:
+        if num > maximo:
+            maximo = num
+    return maximo
 
-numeros = [1, 3, 5, 7, 9, 11, 13, 15]
-print(busqueda_binaria(numeros, 7))  # Output: 3 (posición del número)
+numeros = [2, 8, 1, 6, 12, 5, 3]
+print(encontrar_maximo(numeros))  # Output: 12
