@@ -11,7 +11,9 @@ public class ListaEnlazadaMantenimiento {
  
     // Método para agregar una solicitud según su prioridad
     public void agregarSolicitud(String id, String equipo, String prioridad, LocalDate fechaLimite) {
+
         SolicitudMantenimiento nueva = new SolicitudMantenimiento(id, equipo, prioridad, fechaLimite);
+        
         actualizarPrioCritica(nueva);
  
         if (cabeza == null || prioridadEsMayor(nueva, cabeza)) {

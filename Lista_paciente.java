@@ -32,5 +32,7 @@ public class Lista_paciente {
         scanner.close();
 
     }
+
+    
     
 }
